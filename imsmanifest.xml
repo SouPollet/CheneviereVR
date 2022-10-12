@@ -1,0 +1,186 @@
+<?xml version="1.0" standalone="no"?>
+<!--
+  ~ COPYRIGHT (c) 2019 Speedernet <contact@speedernet.fr>
+  ~ ALL RIGHTS RESERVED
+  ~ This file imsmanifest.xml is part of SpeedernetSphere project
+  ~ SpeedernetSphere can not be copied and/or distributed without the express permission of Speedernet
+  -->
+<manifest identifier="sphere" version="1.0"
+		  xmlns="http://www.imsglobal.org/xsd/imscp_v1p1"
+		  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_v1p3"
+		  xmlns:imsss="http://www.imsglobal.org/xsd/imsss"
+		  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		  xsi:schemaLocation="http://www.imsglobal.org/xsd/imscp_v1p1
+		http://www.imsglobal.org/xsd/imsss
+		http://www.adlnet.org/xsd/adlcp_v1p3
+		http://www.adlnet.org/xsd/adlseq_v1p3">
+	<metadata>
+		<schema>ADL SCORM</schema>
+		<!-- Todo: need to be defined at export ? -->
+		<schemaversion>2004 4th Edition</schemaversion>
+		<!--<schemaversion>1.2</schemaversion>-->
+	</metadata>
+	<organizations default="sphere-speedernet">
+		<organization identifier="sphere-speedernet">
+			<!-- Todo: need to be defined at export -->
+			<title>Cheneviere</title>
+			<imsss:sequencing>
+				<!-- adding choice="true" flow="true" allow adl.nav.request -->
+				<imsss:controlMode choice="true" flow="true" choiceExit="true" />
+			</imsss:sequencing>
+
+			<item identifier="sphere-title" identifierref="sphere-launch">
+				<!-- Todo: need to be defined at export -->
+				<title>Cheneviere</title>
+				<imsss:sequencing>
+					<imsss:deliveryControls completionSetByContent="true" objectiveSetByContent="true"/>
+					<!--
+						Create arbitrary list of 20 objectives.
+					-->
+					<imsss:objectives>
+						<imsss:primaryObjective objectiveID="objective_1"/>
+						<imsss:objective objectiveID="objective_2"/>
+						<imsss:objective objectiveID="objective_3"/>
+						<imsss:objective objectiveID="objective_4"/>
+						<imsss:objective objectiveID="objective_5"/>
+						<imsss:objective objectiveID="objective_6"/>
+						<imsss:objective objectiveID="objective_7"/>
+						<imsss:objective objectiveID="objective_8"/>
+						<imsss:objective objectiveID="objective_9"/>
+						<imsss:objective objectiveID="objective_10"/>
+						<imsss:objective objectiveID="objective_11"/>
+						<imsss:objective objectiveID="objective_12"/>
+						<imsss:objective objectiveID="objective_13"/>
+						<imsss:objective objectiveID="objective_14"/>
+						<imsss:objective objectiveID="objective_15"/>
+						<imsss:objective objectiveID="objective_16"/>
+						<imsss:objective objectiveID="objective_17"/>
+						<imsss:objective objectiveID="objective_18"/>
+						<imsss:objective objectiveID="objective_19"/>
+						<imsss:objective objectiveID="objective_20"/>
+					</imsss:objectives>
+					<!-- //////// -->
+				</imsss:sequencing>
+			</item>
+		</organization>
+	</organizations>
+	<resources>
+		<resource identifier="sphere-launch" adlcp:scormType="sco" href="index.html" type="webcontent">
+			<file href="./index.html"/>
+			<file href="./.DS_Store"/>
+			<file href="./cache.js"/>
+			<file href="./static/css/viewer.css"/>
+			<file href="./static/js/main-viewer.js"/>
+			<file href="./static/js/libs/cache/workbox-core.prod.js"/>
+			<file href="./static/js/libs/cache/workbox-range-requests.prod.js"/>
+			<file href="./static/js/libs/cache/workbox-precaching.prod.js"/>
+			<file href="./static/js/libs/cache/workbox-cacheable-response.prod.js"/>
+			<file href="./static/js/libs/cache/workbox-sw.js"/>
+			<file href="./static/js/libs/cache/workbox-routing.prod.js"/>
+			<file href="./static/js/libs/cache/workbox-strategies.prod.js"/>
+			<file href="./static/js/libs/physics/ammo.js"/>
+			<file href="./static/js/draco/draco_decoder.js"/>
+			<file href="./static/js/draco/draco_decoder.wasm"/>
+			<file href="./static/js/draco/draco_wasm_wrapper.js"/>
+			<file href="./static/js/physics/physic-worker.js"/>
+			<file href="./static/js/basis/basis_transcoder.wasm"/>
+			<file href="./static/js/basis/basis_transcoder.js"/>
+			<file href="./static/assets/target/target.JPEG"/>
+			<file href="./static/assets/target/target.sph3d"/>
+			<file href="./static/assets/tex_loader.png"/>
+			<file href="./static/assets/SPHERE-favicon.png"/>
+			<file href="./static/assets/viewer/cardboards-in.png"/>
+			<file href="./static/assets/viewer/vive-in.png"/>
+			<file href="./static/assets/viewer/fullscreen.png"/>
+			<file href="./static/assets/viewer/quest-in.png"/>
+			<file href="./static/assets/viewer/screens-in.png"/>
+			<file href="./static/assets/viewer/pause.png"/>
+			<file href="./static/assets/viewer/compass.png"/>
+			<file href="./static/assets/viewer/ar-in.png"/>
+			<file href="./static/assets/viewer/play.png"/>
+			<file href="./static/assets/viewer/close.png"/>
+			<file href="./static/assets/loader/gradient.jpg"/>
+			<file href="./static/assets/loader/loader-start.png"/>
+			<file href="./static/assets/loader/loader-end.png"/>
+			<file href="./static/assets/icons/icon-192x192.png"/>
+			<file href="./static/assets/icons/icon-32x32.png"/>
+			<file href="./static/assets/icons/icon-256x256.png"/>
+			<file href="./static/assets/icons/icon-152x152.png"/>
+			<file href="./static/assets/icons/icon-512x512.png"/>
+			<file href="./static/assets/icons/icon-144x144.png"/>
+			<file href="./static/assets/icons/icon-128x128.png"/>
+			<file href="./static/assets/manifest.json"/>
+			<file href="./static/assets/tex_tracker.png"/>
+			<file href="./static/assets/vrcontroller/hand/sphere_controller_color.jpg"/>
+			<file href="./static/assets/vrcontroller/hand/manette.gltf"/>
+			<file href="./static/assets/vrcontroller/hand/hand_occulus2_albedo_1024.jpg"/>
+			<file href="./static/assets/vrcontroller/hand/main.bin"/>
+			<file href="./static/assets/vrcontroller/hand/main.gltf"/>
+			<file href="./static/assets/vrcontroller/hand/main_manette_test.bin"/>
+			<file href="./static/assets/vrcontroller/hand/manette.bin"/>
+			<file href="./static/assets/vrcontroller/hand/main_manette_test.gltf"/>
+			<file href="./static/assets/vrcontroller/single/Controller_VR_color.jpg"/>
+			<file href="./static/assets/vrcontroller/single/Controller_VR.bin"/>
+			<file href="./static/assets/vrcontroller/single/Controller_VR.gltf"/>
+			<file href="./static/assets/vrcontroller/target.png"/>
+			<file href="./static/assets/gradients/tb.jpg"/>
+			<file href="./static/assets/gradients/lr.jpg"/>
+			<file href="./static/assets/gradients/wave.jpg"/>
+			<file href="./static/assets/gradients/circular.jpg"/>
+			<file href="./static/assets/gradients/radial.jpg"/>
+			<file href="./static/assets/gradients/bt.jpg"/>
+			<file href="./static/assets/effects/Water_1_M_Normal.jpg"/>
+			<file href="./static/assets/effects/particules/spark.png"/>
+			<file href="./static/assets/effects/particules/smokeparticle.png"/>
+			<file href="./static/assets/effects/waternormals.jpg"/>
+			<file href="./static/assets/effects/Water_2_M_Normal.jpg"/>
+			<file href="./static/assets/help/info.png"/>
+			<file href="./static/assets/help/warning.png"/>
+			<file href="./static/assets/help/plus.png"/>
+			<file href="./static/assets/help/touchscreen-navigation-fr.png"/>
+			<file href="./static/assets/help/touchscreen-navigation-en.png"/>
+			<file href="./static/assets/help/up.png"/>
+			<file href="./static/assets/help/shortcut.png"/>
+			<file href="./static/assets/help/vrheadset-navigation-en.png"/>
+			<file href="./static/assets/help/desktop_navigation-en.png"/>
+			<file href="./static/assets/help/vrheadset-navigation-fr.png"/>
+			<file href="./static/assets/help/desktop_navigation-fr.png"/>
+			<file href="./static/assets/help/cardboard-navigation-en.png"/>
+			<file href="./static/assets/help/cardboard-navigation-fr.png"/>
+			<file href="./static/assets/help/launch.png"/>
+			<file href="./static/assets/hud/map-interestpoint-unknown.png"/>
+			<file href="./static/assets/hud/circle-red.twd"/>
+			<file href="./static/assets/hud/arrow-blue.twd"/>
+			<file href="./static/assets/hud/map-background.png"/>
+			<file href="./static/assets/hud/black.png"/>
+			<file href="./static/assets/hud/map-interestpoint-known.png"/>
+			<file href="./static/assets/hud/map-goto-known.png"/>
+			<file href="./static/assets/hud/map-north.png"/>
+			<file href="./static/assets/hud/map-goto-unknown.png"/>
+			<file href="./api/api-wrapper.js"/>
+			<file href="./imsmanifest.xml"/>
+			<file href="./data/simulation.sphere"/>
+			<file href="./data/3D/Poly4.glb"/>
+			<file href="./data/3D/Poly4/Poly4.glb_bin_data.bin"/>
+			<file href="./data/std/panoramas/output(6).jpg"/>
+			<file href="./data/std/panoramas/output(7).jpg"/>
+			<file href="./data/std/panoramas/output(4).jpg"/>
+			<file href="./data/std/panoramas/output(8).jpg"/>
+			<file href="./data/std/panoramas/output(3).jpg"/>
+			<file href="./data/std/sprites/SecondeVueDuSalon.png"/>
+			<file href="./data/std/sprites/PremiereVueDuSalon.png"/>
+			<file href="./data/sounds/DISCO_LINES_BABY_GIRL.mp3"/>
+			<file href="./data/logo.png"/>
+			<file href="./data/pano.jpg"/>
+			<file href="./data/pano_pwa.jpg"/>
+			<file href="./data/uhd/panoramas/output(6).jpg"/>
+			<file href="./data/uhd/panoramas/output(7).jpg"/>
+			<file href="./data/uhd/panoramas/output(4).jpg"/>
+			<file href="./data/uhd/panoramas/output(8).jpg"/>
+			<file href="./data/uhd/panoramas/output(3).jpg"/>
+			<file href="./data/uhd/sprites/SecondeVueDuSalon.png"/>
+			<file href="./data/uhd/sprites/PremiereVueDuSalon.png"/>
+			<file href="./data/uhd/sprites/Here.png"/>
+		</resource>
+	</resources>
+</manifest>
